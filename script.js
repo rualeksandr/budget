@@ -79,8 +79,19 @@ let appData = {
         } else {
             appData.chooseIncome();
         }
+
+        appData.income.forEach(function(item, i) {
+            alert('Способы доп. заработка: '  + (i+1) + ' - '+ item);
+        });
+        
     }
 };
+
+appData.chooseIncome();
+
+for (let key in appData) {
+    console.log('Наша программа включает в себя данные: ' + key + ' - ' + appData[key]);
+}
 
 // appData.chooseExpenses();
 
